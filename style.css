@@ -1,169 +1,203 @@
-*{
-    margin: 0;
-    padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+  background-image: url("img/tlo.jpg"); /* Zmień na swoją nazwę pliku */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(161, 224, 235, 0.384); /* półprzezroczyste tło */
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    z-index: 1000;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-.wstep-tlo {
-    height: 100vh; /* pełna wysokość ekranu */
-    background-image: url('img/tlo3.jpg'); /* ścieżka do zdjęcia */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-.wstep-tlo::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(31, 31, 31, 0.5); /* ciemne przyciemnienie */
-    z-index: 1;
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: background 0.3s;
 }
-.intro{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 90%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .navbar ul {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-.intro div{
-    background-color: rgba(235, 243, 243, 0.842);
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    display: flex; /*Układanie elementów obok siebie*/
-    justify-content: center; /*Rozmieszczenie elementów w poziomie*/
-}
-.intro-one{
-    width: 500px;
-}
-.intro-two{
-    width: 500px;
-}
-.flow{
-    display: flex;
-    height: 200px;
-    flex-wrap: nowrap; /*Czy zawijać elementy*/
-    justify-content: space-between;
-}
-.flow div{
-    padding: 20px;
-    border: solid;
-    width: 25%;
-    font-size: 30px;;
-}
-p{
-    font-size: 20px;
-    text-align: center;
-}
-a{
-    text-decoration: none;
-    color:black;
-}
-.a2{
-    padding: 15px;
-    background-color: rgba(223, 240, 240, 0.315);
-    width: 110px;
-    margin: 10px;
-            
-    font-size: 25px;
-    text-align: center;
-    line-height: 5px;
-}
-a:hover{
-    color:rgb(240, 5, 5);
-    background-color: aliceblue;
-}
-.lokalizacja{
-    display: flex;
-    justify-content: space-around;
-    height: 100vh;
-    flex-wrap: nowrap;
-    padding: 10px;
-    box-sizing: border-box;
-    border-style: solid;
-    height: 50%;
-    width: 100%;
-    margin-top: 10px;
-}
-.lok2{
-    justify-content: flex-start; 
-}
-.lok3{
-    padding: 10px;
-    justify-content: center;
-}
-
-.blok-galerii {
-    margin-top: 10px;
-    width: 100%;
-    overflow: hidden; /*Zdjęcia poza blokiem nie widoczne*/
-    border: 2px solid #ccc;
-    border-radius: 12px;
-    background: #fff;
-    padding: 10px;
-
-}
-
-.galeria-scroll {
-    display: flex;
     gap: 10px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
+  }
 }
 
-.galeria-scroll img {
-    height: 180px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    scroll-snap-align: start;
-    transition: transform 0.3s;
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #f8f8f8;
+  border-bottom: 2px solid #ddd;
 }
 
-.galeria-scroll img:hover {
-    transform: scale(1.05);
+.info-box {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
 }
 
-.o_nas{
-    border: solid;
-    width: 60%;
-    height: 300px;
-    padding: 10px;
-    margin-top: 10px;
-    box-sizing: border-box;
+.info-box h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.info-box p, .info-box a {
+  font-size: 1em;
+  color: #333;
+  text-decoration: none;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  padding: 15px;
+  gap: 10px;
+  background: #fff;
+}
+
+.gallery img {
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.o-nas {
     display: flex;
-    justify-content: space-around;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.o_nas_tekst{
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: #fff8f0;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    align-items: center;
     text-align: center;
 }
 
-.o_nas_img img{
-    width: 50vh;
-    height: 50vh;
+.o-nas-text {
+    flex: 1;
+}
+
+.o-nas-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.o-nas-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.o-nas img {
+    flex: 1;
+    max-width: 200px;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.lokalizacja {
+    margin-top: 4rem;
+}
+
+.lokalizacja h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.lokalizacja p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .o-nas {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .o-nas img {
+    max-width: 100%;
+    }
 }

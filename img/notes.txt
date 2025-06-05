@@ -1,0 +1,177 @@
+** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(240, 5, 5);
+  background-color: aliceblue;
+}
+
+/* NAVBAR */
+/*
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(161, 224, 235, 0.384);
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /*wieksza wartosc on top*//*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WSTĘP *//*
+
+.wstep-tlo {
+  height: 100vh;
+  background: url('img/tlo3.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.wstep-tlo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(31, 31, 31, 0.5);
+  z-index: 1;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.intro div {
+  background-color: rgba(235, 243, 243, 0.842);
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+/* FLOW BLOK */
+/*
+.flow {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.flow div {
+  padding: 20px;
+  border: 1px solid;
+  width: 25%;
+  font-size: 30px;
+}
+
+/* TEKST */
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.a2 {
+  padding: 15px;
+  background-color: rgba(223, 240, 240, 0.315);
+  width: 110px;
+  margin: 10px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 5px;
+}
+
+/* LOKALIZACJA */
+
+.lokalizacja {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid;
+}
+
+.lok3 {
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* GALERIA */
+
+.blok-galerii {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.galeria-scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.galeria-scroll img {
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  transition: transform 0.3s;
+}
+
+.galeria-scroll img:hover {
+  transform: scale(1.05);
+}
+
+/* O NAS */
+
+.o_nas {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  height: 350px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid;
+}
+
+.o_nas_tekst {
+  text-align: center;
+}
+
+.o_nas_img img {
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover;
+}
