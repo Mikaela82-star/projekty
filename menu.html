@@ -5,20 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <style>
+        body{
+            background-color: rgb(215, 197, 233)97, 233;
+        }
         .menu{
-            border: 2px groove pink;
+            border: 4px groove pink;
             height: 20%;
-            width: 30%;
+            width: 50%;
             display: flex;
             justify-content: center;
             padding: 2px;
             margin: 0 auto;
+        
         }
+        .all{
+            display: flex;
+        }
+        .prices{
+            border: 4px groove pink;
+            height: 70vh;
+            width: 30%;
+            text-align: center;
+            padding: 2px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .photos{
+            border: 2px groove pink;
+            height: 70vh;
+            width: 30%;
+            display: flex;
+            margin-top: 20px;
+         }
+         p{
+            font-size: small;
+         }
     </style>
 </head>
 <body>
     <div class="menu">
         <h1>MENU</h1>
     </div>
+
+    <div class="all">
+
+        <div class="photos">
+
+        </div>
+
+         <div class="prices">
+            <h4>Green Garden</h4>
+            <p>Ogórek, mięta, limonka, syrop z agawy, woda gazowana
+            19 zł</p>
+
+            <h4>Citrus Fizz</h4>
+            <p>Pomarańcza, cytryna, grejpfrut, miód, tonik
+            21 zł</p>
+
+            <h4>Berry Breeze</h4>
+            <p>Truskawki, borówki, sok z cytryny, mięta, sprite
+            20 zł</p>
+         </div>
+
+         <div class="photos">
+
+         </div>
+
+    </div>
+    
 </body>
 </html>
