@@ -15,6 +15,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 .wstep-tlo {
     height: 100vh; /* pełna wysokość ekranu */
@@ -48,18 +49,19 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    line-height: 5px;
+    display: flex; /*Układanie elementów obok siebie*/
+    justify-content: center; /*Rozmieszczenie elementów w poziomie*/
 }
 .intro-one{
     width: 500px;
 }
 .intro-two{
-    width: 700px;
+    width: 500px;
 }
 .flow{
     display: flex;
     height: 200px;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /*Czy zawijać elementy*/
     justify-content: space-between;
 }
 .flow div{
@@ -92,6 +94,7 @@ a:hover{
 }
 .lokalizacja{
     display: flex;
+    justify-content: space-around;
     height: 100vh;
     flex-wrap: nowrap;
     padding: 10px;
@@ -99,7 +102,7 @@ a:hover{
     border-style: solid;
     height: 50%;
     width: 100%;
-    margin-top: 10px;;
+    margin-top: 10px;
 }
 .lok2{
     justify-content: flex-start; 
@@ -141,4 +144,26 @@ a:hover{
 
 .galeria-scroll img:hover {
     transform: scale(1.05);
+}
+
+.o_nas{
+    border: solid;
+    width: 60%;
+    height: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.o_nas_tekst{
+    text-align: center;
+}
+
+.o_nas_img img{
+    width: 50vh;
+    height: 50vh;
 }
