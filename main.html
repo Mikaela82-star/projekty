@@ -9,14 +9,18 @@
 </head>
 <body>
   <header class="hero-section">
+
+    <div class="logo">
+      <img src="img/logo.png">
+    </div>
+
     <nav class="navbar">
       <ul>
         <li><a href="menuu.html">Menu</a></li>
-        <li><a href="#">Promocje</a></li>
-        <li><a href="#">Dostawa</a></li>
-        <li><a href="#">Rezerwacje</a></li>
-        <li><a href="#">Galeria</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="#lokalizacja">Lokalizacja</a></li>
+        <li><a href="rezerwacje.html">Rezerwacje</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
     <div class="hero-text">
@@ -31,8 +35,8 @@
     <p>Kazimierza Kostaneckiego 4,<br>30-688 Kraków</p>
   </div>
   <div class="info-box">
-    <i class="icon">📞</i>
-    <h3>Kontakt</h3>
+    <i class="icon" id="kontakt">📞</i>
+    <h3 >Kontakt</h3>
     <p>123 456 789</p>
   </div>
   <div class="info-box">
@@ -43,11 +47,11 @@
   <div class="info-box">
     <i class="icon">🛒</i>
     <h3>Zamów online</h3>
-    <a href="#">Zobacz menu</a>
+    <a href="menuu.html">Zobacz menu</a>
   </div>
 </section>
-
-<div class="gallery">
+<br>
+<div class="gallery" id="galeria">
   <img src="img/k1.jpg" alt="Drink">
   <img src="img/k2.jpg" alt="Drink">
   <img src="img/k3.jpg" alt="Drink">
@@ -61,8 +65,8 @@
   <img src="img/k11.jpg" alt="Drink">
   <!-- Dodaj więcej -->
 </div>
-
-<section class="section o-nas">
+<br>
+<section class="section o-nas" id="o_nas">
     <div class="o-nas-text">
       <h2>O nas</h2>
       <p><strong>Smak, styl, atmosfera</strong><br>
@@ -71,11 +75,60 @@
     <img src="img/k7.jpg" alt="Koktajl">
   </section>
 
-  <section class="section lokalizacja">
+  <section class="section lokalizacja" id="lokalizacja">
+    <div>
     <h2>Nasza lokalizacja</h2>
     <p>Znajdujemy się w samym sercu miasta – w miejscu, gdzie tętni życie i unosi się aromat świeżych składników. Nasza restauracja to idealne miejsce na lunch, kolację lub spotkanie z bliskimi.</p>
+    </div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.089274904833!2d20.016783815707174!3d50.071803879427074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165c28058d4167%3A0xe09b51928e5ed612!2sFort%2050%20Prokocim!5e0!3m2!1spl!2spl!4v1686314290112!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
+
+  <section class="oceny-section">
+    
+  <div class="oceny-box">
+    <img src="img/google.png">
+    <h3>8900</h3>
+    <p>opinii w Google<br>(4,9/5)</p>
+  </div>
+  <div class="oceny-box">
+    <img src="img/Instagram.png">
+    <h3>700</h3>
+    <p>głosów na instagramie<br>(5/5)</p>
+  </div>
+  <div class="oceny-box">
+    <img src="img/drink.png">
+    <h3>TOP5</h3>
+    <p>Napojo-barów Kraków</p>
+  </div>
+  <div class="oceny-box">
+    <img src="img/star.png">
+    <h3>16</h3>
+    <p>lat doświadczenia</p>
+  </div>
+
+  </section>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>Autor: Oliwia Sierak</p>
+      <p>© 2025 Oliwia Sierak. Wszelkie prawa zastrzeżone.</p>
+    </div>
+    <div class="footer-center">
+      <nav>
+        <a href="main.html">Strona główna</a>
+        <a href="#o_nas">O nas</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="https://policies.google.com/privacy?hl=pl">Polityka prywatności</a>
+      </nav>
+    </div>
+    <div class="footer-right">
+      <a href="https://www.facebook.com/" aria-label="Facebook"><img src="img/facebook.webp"></a>
+      <a href="https://www.instagram.com/" aria-label="Instagram"><img src="img/Instagram.png"></a>
+    </div>
+  </div>
+</footer>
+
 
 </body>
 </html>

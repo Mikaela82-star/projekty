@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezerwacje</title>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to right, #d9e4f5, #fce3ec);
+        color: #333;
+    }
+
+    h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #caa7e8;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 50px;
+    }
+
+    .layout {
+      background-color: #111;
+      border-radius: 12px;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .layout h2 {
+      color: #ff00ff;
+      margin-bottom: 20px;
+    }
+
+    .tables {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .table-btn {
+      background: transparent;
+      border: 2px solid #ff00ff;
+      color: #ff00ff;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .table-btn:hover {
+      background-color: #ff00ff;
+      color: white;
+    }
+
+    .form-section {
+      min-width: 300px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      border: none;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    a{
+        background-color:  rgb(82, 21, 78);;
+        color: white;
+        cursor: pointer;
+        border: none;
+        transition: background 0.3s;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+    }
+
+  </style>
+  <body>
+  <header>
+    <h1>REZERWACJE</h1>
+  </header>
+
+  <main>
+    <section class="layout">
+      <h2>UKŁAD STOLIKÓW</h2>
+      <div class="tables">
+        <button class="table-btn">Stolik 1</button>
+        <button class="table-btn">Stolik 2</button>
+        <button class="table-btn">Stolik 3</button>
+        <button class="table-btn">Stolik 4</button>
+        <button class="table-btn">Stolik 5</button>
+        <button class="table-btn">Stolik 6</button>
+        <button class="table-btn">Stolik 7</button>
+        <button class="table-btn">Stolik 8</button>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <form>
+        <label for="name">Wpisz swoje imię i nazwisko:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="table">Wybierz numer stolika:</label>
+        <select id="table" name="table" required>
+          <option value="">-- Wybierz stolik --</option>
+          <option value="1">Stolik 1</option>
+          <option value="2">Stolik 2</option>
+          <option value="3">Stolik 3</option>
+          <option value="4">Stolik 4</option>
+          <option value="5">Stolik 5</option>
+          <option value="6">Stolik 6</option>
+          <option value="7">Stolik 7</option>
+          <option value="8">Stolik 8</option>
+        </select>
+
+        <label for="date">Wybierz datę:</label>
+        <input type="date" id="date" name="date" required />
+
+        <a href="main.html">Zarezerwuj</a>
+      </form>
+    </section>
+
+  </main>
+</body>
+</html>

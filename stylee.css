@@ -20,6 +20,7 @@ h1 {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
 }
 
 .container {
@@ -91,4 +92,27 @@ h1 {
 a{
     text-decoration: none;
     color: black;
+    flex-direction: row;
+}
+
+.przyciski{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex: 1;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.przyciski a {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.przyciski a:hover {
+  background-color: #c59be0;
 }
